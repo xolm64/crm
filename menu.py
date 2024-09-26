@@ -16,7 +16,7 @@ WashingFactorySaratov.add_order(order1)
 WashingFactorySaratov.add_order(order2)
 WashingFactorySaratov.add_order(order3)
 
-#сделать функцию добавления новых заказов через терминал, выдавать общую сумму заказов в цеху
+
 WashingFactorySaratov.all_orders_in_factory()
 WashingFactorySaratov.add_archive(order2)
 print("++++++++++++++++++++++++++++++++++")
@@ -46,7 +46,7 @@ while True:
         print("Вы выбрали: Заказ выполнен. Перенести заказ в архив")
         WashingFactorySaratov.all_orders_in_factory()
         id_order = input("укажите id заказа, который надо перенести в архив")
-        #order.id
+
         WashingFactorySaratov.add_archive()
 
 
@@ -55,13 +55,14 @@ while True:
         WashingFactorySaratov.orders_archive()
     elif user_input == "5":
         print("Вы выбрали: Поиск заказа по номеру телефона клиента")
-        # !!!Доделать!!!
+
         tel_find = str(input('Введите номер телефона клиента '))
         for elem in WashingFactorySaratov.orders:
              if tel_find in str(elem):
                  print(elem)
              else:
-                 print(" Заказа с таким номером телефона не существует")
+                 pass
+        print(" поиск завершен")
 
 
 
